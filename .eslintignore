@@ -4,3 +4,7 @@ node_modules
 yarn.lock
 package-lock.json
 public
+cypress
+coverage
+**.bun
+**.js

@@ -1,7 +1,6 @@
-import { Button } from '@components/elements/Button'
 import Head from 'next/head'
-
 import { useEffect, useState } from 'react'
+import { Button } from '@components/elements/Button'
 
 export default function Home (): JSX.Element {
   const [name, setName] = useState('')
