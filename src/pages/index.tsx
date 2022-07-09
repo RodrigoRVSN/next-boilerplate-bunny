@@ -1,7 +1,15 @@
-import { Button } from "@components/elements/Button";
-import Head from "next/head";
+import { Button } from '@components/elements/Button'
+import Head from 'next/head'
 
-export default function Home(): JSX.Element {
+import { useEffect, useState } from 'react'
+
+export default function Home (): JSX.Element {
+  const [name, setName] = useState('')
+
+  useEffect(() => {
+    setName('Rodrigo Victor')
+  }, [])
+
   return (
     <>
       <Head>
@@ -15,10 +23,10 @@ export default function Home(): JSX.Element {
           rel="noreferrer"
         >
           {' '}
-          Rodrigo Victor
+          {name}
         </a>
       </h1>
       <Button />
     </>
-  );
+  )
 }

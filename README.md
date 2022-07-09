@@ -1,6 +1,5 @@
 # 👕 Next.JS Template with Linter
 
-
 <br>
 
 ___
@@ -8,22 +7,47 @@ ___
 
 - NextJS
 - Typescript
-- Axios (Fetching)
 - ESLint (Code Pattern)
 - Prettier (Formatter)
 - Husky (Pre-commit)
-- Jest (Unit/Integration Test)
+- Vitest (Unit/Integration Test)
 - Cypress (Test E2E)
+- Bun
 ___
 ## 🤺 How to use:
 
-- `git clone https://github.com/RodrigoRVSN/next_ts_boilerplate.git`
-- `yarn` to install dependencies
-- `yarn dev` to run the app
-- `yarn test` to run tests
-- `yarn lint` to run linters
-- `yarn cy:run` to run cypress in terminal
-- `yarn cy:open` to run cypress in browser
+
+```bash
+git clone https://github.com/rodrigorvsn/next_ts_template.git
+```
+
+```bash
+bun install
+```
+
+```bash
+bun dev
+```
+
+```bash
+bun test
+```
+
+```bash
+bun test:cov
+```
+
+```bash
+bun lint
+```
+
+```bash
+bun cy:run
+```
+
+```bash
+bun cy:open
+```
 
 ___
 ## 🤖 Auto-formatting on save:
