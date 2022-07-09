@@ -1,36 +1,39 @@
-# Next.js with Bun runtime
+# 👕 Next.JS Template with Linter
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with Bun.
 
-## Getting Started
+<br>
 
-### Cloning the repo
+___
+## 🔨 Tools:
 
-```sh
-bun create next ./app
-```
+- NextJS
+- Typescript
+- Axios (Fetching)
+- ESLint (Code Pattern)
+- Prettier (Formatter)
+- Husky (Pre-commit)
+- Jest (Unit/Integration Test)
+- Cypress (Test E2E)
+___
+## 🤺 How to use:
 
-First, run the development server:
+- `git clone https://github.com/RodrigoRVSN/next_ts_boilerplate.git`
+- `yarn` to install dependencies
+- `yarn dev` to run the app
+- `yarn test` to run tests
+- `yarn lint` to run linters
+- `yarn cy:run` to run cypress in terminal
+- `yarn cy:open` to run cypress in browser
 
-```bash
-bun dev
-```
+___
+## 🤖 Auto-formatting on save:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Inside `/.vscode/settings.json` we set prettier as the default formatter, and also set `editor.codeActionsOnSave` to run:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- **Lint:** `"source.fixAll.eslint"`
+- **Format:** `"source.fixAll.format"`
 
-## Learn More
+___
+## ✅ Checking standards pre-commit:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Using [husky](https://www.npmjs.com/package/husky) we can check all of our style standards to make sure our git commits are up to par. Check those checks out at [`.husky/pre-commit`](.husky/pre-commit)

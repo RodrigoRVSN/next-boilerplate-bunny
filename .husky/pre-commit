@@ -1,0 +1,30 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '👷🧪 Styling, testing and building your project before committing'
+
+# Check Prettier standards
+yarn tsc ||
+(
+    echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
+            TSC Check Failed. Run yarn tsc, add changes and try commit again.';
+    false;
+)
+
+# Check ESLint Standards
+yarn lint-staged ||
+(
+        echo '😤🏀👋😤 Get that weak shit out of here! 😤🏀👋😤 
+                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        false; 
+)
+
+yarn cy:run ||
+(
+        echo '😤👀😤👀 Man what are you doing 😤👀😤👀 
+                Cypress Failed. Make the required changes listed above, add changes and try to commit again.'
+        false; 
+)
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ You win this time... I am committing this now. ✅✅✅✅'

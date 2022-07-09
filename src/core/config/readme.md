@@ -1,0 +1,1 @@
+Objects and variables to config the project, like routes
