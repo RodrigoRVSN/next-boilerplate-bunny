@@ -18,7 +18,7 @@ ___
 
 
 ```bash
-git clone https://github.com/rodrigorvsn/next_ts_template.git
+git clone https://github.com/rodrigorvsn/next-boilerplate-bunny.git
 ```
 
 ```bash
