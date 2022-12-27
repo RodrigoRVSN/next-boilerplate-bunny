@@ -23,7 +23,7 @@ jobs:
       - name: ⚙️ Setup node
         uses: actions/setup-node@v1
         with:
-          node-version: 14.17.x
+          node-version: 16.0.0
 
       - name: 🧠 Cache node_modules
         uses: actions/cache@v2
