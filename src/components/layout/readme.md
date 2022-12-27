@@ -1,1 +1,0 @@
-Global Components like Footer, Header, Menus

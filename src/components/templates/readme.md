@@ -1,1 +1,0 @@
-Specific themes like locality, languages
