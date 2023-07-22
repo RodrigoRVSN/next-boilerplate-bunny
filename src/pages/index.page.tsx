@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-export default function Home (): JSX.Element {
+export default function Home() {
   return (
     <>
       <Head>
@@ -16,7 +16,6 @@ export default function Home (): JSX.Element {
           Rodrigo Victor
         </a>
       </h1>
-      <button>oi</button>
     </>
   )
 }
